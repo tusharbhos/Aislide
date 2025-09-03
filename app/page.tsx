@@ -10,6 +10,19 @@ interface Slide {
   content: string;
 }
 
+// Extend Window interface for TypeScript
+declare global {
+  interface Window {
+    webkitSpeechRecognition: typeof SpeechRecognition;
+  }
+}
+
+// Some browsers only expose webkitSpeechRecognition
+const SpeechRecognitionClass: typeof SpeechRecognition | undefined =
+  typeof window !== "undefined"
+    ? window.SpeechRecognition || window.webkitSpeechRecognition
+    : undefined;
+
 export default function Home() {
   const [slides, setSlides] = useState<Slide[]>([]);
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -22,17 +35,18 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (typeof window === "undefined" || !(window as any).webkitSpeechRecognition) {
+    if (!SpeechRecognitionClass) {
       console.warn("Speech Recognition not supported in this browser.");
       return;
     }
 
-    const recognition = new (window as any).webkitSpeechRecognition();
+    const recognition = new SpeechRecognitionClass();
     recognition.continuous = true;
     recognition.lang = "en-US";
 
-    recognition.onresult = (event: any) => {
-      const transcript = event.results[event.results.length - 1][0].transcript.toLowerCase();
+    recognition.onresult = (event: SpeechRecognitionEvent) => {
+      const transcript =
+        event.results[event.results.length - 1][0].transcript.toLowerCase();
       console.log("You said:", transcript);
 
       slides.forEach((slide) => {
