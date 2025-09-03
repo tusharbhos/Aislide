@@ -1,0 +1,110 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "commands": [
+        "slide 1",
+        "go to slide 1",
+        "first slide",
+        "start presentation",
+        "beginning slide",
+        "introduction slide",
+        "show slide one",
+        "open slide 1",
+        "take me to slide 1",
+        "I want the first slide",
+        "display introduction",
+        "intro slide",
+        "go to the first slide",
+        "slide number one",
+        "begin with slide 1"
+      ],
+      "content": "Welcome to Slide 1. This is the introduction."
+    },
+    {
+      "id": 2,
+      "commands": [
+        "slide 2",
+        "go to slide 2",
+        "second slide",
+        "show slide two",
+        "next slide",
+        "take me to slide 2",
+        "display slide 2",
+        "open slide two",
+        "services slide",
+        "about services",
+        "slide number two",
+        "move to slide 2",
+        "go to the services slide",
+        "I want slide 2",
+        "show me second slide"
+      ],
+      "content": "This is Slide 2, covering our services."
+    },
+    {
+      "id": 3,
+      "commands": [
+        "slide 3",
+        "go to slide 3",
+        "third slide",
+        "show slide three",
+        "technology slide",
+        "display slide 3",
+        "take me to slide 3",
+        "open slide three",
+        "move to slide 3",
+        "slide number three",
+        "about technology",
+        "show me the third slide",
+        "go to the technology slide",
+        "I want slide 3",
+        "take me to technology"
+      ],
+      "content": "Welcome to Slide 3, about our technology."
+    },
+    {
+      "id": 4,
+      "commands": [
+        "slide 4",
+        "go to slide 4",
+        "fourth slide",
+        "show slide four",
+        "display slide 4",
+        "take me to slide 4",
+        "open slide four",
+        "customer stories slide",
+        "success stories",
+        "case studies slide",
+        "slide number four",
+        "go to customer success slide",
+        "I want slide 4",
+        "move to slide 4",
+        "show me the fourth slide"
+      ],
+      "content": "This is Slide 4, showing customer success stories."
+    },
+    {
+      "id": 5,
+      "commands": [
+        "slide 5",
+        "next",
+        "go to slide 5",
+        "fifth slide",
+        "show slide five",
+        "final slide",
+        "conclusion slide",
+        "display slide 5",
+        "open slide five",
+        "last slide",
+        "thank you slide",
+        "ending slide",
+        "wrap up slide",
+        "slide number five",
+        "go to the last slide",
+        "I want slide 5"
+      ],
+      "content": "Finally, Slide 5 is our conclusion. Thank you!"
+    }
+  ]
+}
