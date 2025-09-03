@@ -3,41 +3,41 @@
     {
       "id": 1,
       "commands": [
-        "slide 1",
-        "go to slide 1",
+        "slide one",
+        "go to slide one",
         "first slide",
         "start presentation",
         "beginning slide",
         "introduction slide",
         "show slide one",
-        "open slide 1",
-        "take me to slide 1",
+        "open slide one",
+        "take me to slide one",
         "I want the first slide",
         "display introduction",
         "intro slide",
         "go to the first slide",
         "slide number one",
-        "begin with slide 1"
+        "begin with slide one"
       ],
       "content": "Welcome to Slide 1. This is the introduction."
     },
     {
       "id": 2,
       "commands": [
-        "slide 2",
-        "go to slide 2",
+        "slide two",
+        "go to slide two",
         "second slide",
         "show slide two",
         "next slide",
-        "take me to slide 2",
-        "display slide 2",
+        "take me to slide two",
+        "display slide two",
         "open slide two",
         "services slide",
         "about services",
         "slide number two",
-        "move to slide 2",
+        "move to slide two",
         "go to the services slide",
-        "I want slide 2",
+        "I want slide two",
         "show me second slide"
       ],
       "content": "This is Slide 2, covering our services."
@@ -45,20 +45,20 @@
     {
       "id": 3,
       "commands": [
-        "slide 3",
-        "go to slide 3",
+        "slide three",
+        "go to slide three",
         "third slide",
         "show slide three",
         "technology slide",
-        "display slide 3",
-        "take me to slide 3",
+        "display slide three",
+        "take me to slide three",
         "open slide three",
-        "move to slide 3",
+        "move to slide three",
         "slide number three",
         "about technology",
         "show me the third slide",
         "go to the technology slide",
-        "I want slide 3",
+        "I want slide three",
         "take me to technology"
       ],
       "content": "Welcome to Slide 3, about our technology."
@@ -66,20 +66,20 @@
     {
       "id": 4,
       "commands": [
-        "slide 4",
-        "go to slide 4",
+        "slide four",
+        "go to slide four",
         "fourth slide",
         "show slide four",
-        "display slide 4",
-        "take me to slide 4",
+        "display slide four",
+        "take me to slide four",
         "open slide four",
         "customer stories slide",
         "success stories",
         "case studies slide",
         "slide number four",
         "go to customer success slide",
-        "I want slide 4",
-        "move to slide 4",
+        "I want slide four",
+        "move to slide four",
         "show me the fourth slide"
       ],
       "content": "This is Slide 4, showing customer success stories."
@@ -87,14 +87,14 @@
     {
       "id": 5,
       "commands": [
-        "slide 5",
+        "slide five",
         "next",
-        "go to slide 5",
+        "go to slide five",
         "fifth slide",
         "show slide five",
         "final slide",
         "conclusion slide",
-        "display slide 5",
+        "display slide five",
         "open slide five",
         "last slide",
         "thank you slide",
@@ -102,7 +102,7 @@
         "wrap up slide",
         "slide number five",
         "go to the last slide",
-        "I want slide 5"
+        "I want slide five"
       ],
       "content": "Finally, Slide 5 is our conclusion. Thank you!"
     }
