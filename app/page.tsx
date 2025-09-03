@@ -10,15 +10,28 @@ interface Slide {
   content: string;
 }
 
-// Extend Window interface for TypeScript
+// Minimal SpeechRecognition type (enough for our usage)
+interface SpeechRecognition extends EventTarget {
+  continuous: boolean;
+  lang: string;
+  start: () => void;
+  stop: () => void;
+  onresult: ((event: SpeechRecognitionEvent) => void) | null;
+}
+
+interface SpeechRecognitionEvent extends Event {
+  results: SpeechRecognitionResultList;
+}
+
 declare global {
   interface Window {
-    webkitSpeechRecognition: typeof SpeechRecognition;
+    SpeechRecognition?: { new (): SpeechRecognition };
+    webkitSpeechRecognition?: { new (): SpeechRecognition };
   }
 }
 
-// Some browsers only expose webkitSpeechRecognition
-const SpeechRecognitionClass: typeof SpeechRecognition | undefined =
+// Pick whichever is available
+const SpeechRecognitionClass =
   typeof window !== "undefined"
     ? window.SpeechRecognition || window.webkitSpeechRecognition
     : undefined;
@@ -31,7 +44,7 @@ export default function Home() {
   useEffect(() => {
     fetch("/commands.json")
       .then((res) => res.json())
-      .then((data) => setSlides(data.slides));
+      .then((data) => setSlides(data.slides as Slide[]));
   }, []);
 
   useEffect(() => {
